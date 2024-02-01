@@ -1,0 +1,435 @@
+baseURL: "https://jle.one"
+languageCode: "en-us"
+title: "JLE Advisors"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+googleAnalytics: G-FF5ML6MFX9
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "JLe"
+  description: Data solutions for your business
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+     disableThemeToggle: true
+     defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    brandLogo: "/logo.png" #
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Business Tech Advisors" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "JLE Business Technology Advisors"
+    title: "Technology Simplified."
+    subtitle: "Start your digital transformation journey."
+    content: "We're focused on solving problems and make your technology help, not hinder."
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Book Your Free 30min Consultation"
+      url: "https://cal.com/jle.one"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://example.com
+        - icon: fab fa-x-twitter
+          url: https://example.com
+      customIcons:
+        - icon: /fav.png
+          url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "Our Philosophy"
+    image: "/images/me.png"
+    content: |-
+      We've come a long way with technology and it's very easy to complicate and get overwhelmed with the technologies we use.
+
+      At JLE Consulting, we're focused on keeping technology simple and helping our clients understand the tools that they use. 
+      
+      Not only do we help with the setup - we aim to ensure that you understand the solutions, the options you have available now and in future, and help you be prepared for your technology journey post-engagement.
+    
+      Servicing Sydney's local businesses, contact us to find out how we can help.
+    skills:
+      enable: false
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "HTML"
+        - "CSS"
+        - "JavaScript"
+        - "React"
+        - "Node"
+        - "Express"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Your potential stack."
+    items:
+      - job: "Tracking your website traffic"
+        company: "Web Analytics"
+        featuredLink:
+          enable: false
+        info:
+          enable: false
+        content: |
+          Connect your website with web analytic technologies such as Google Analytics and Google Tag Manager.
+          
+          Why?
+          
+          - Understand the traffic of your website
+          - Track events and conversions linked to your media advertising to understand your ROI
+          - Unlock audience segmentation and retargeting
+      - job: "Enterprise Resource Planning"
+        company: "ERP"
+        featuredLink:
+          enable: false
+        info:
+          enable: false
+        content: |
+          Need a one stop shop for running your business? An ERP may be something worth considering to consolidate varying different locations of data.
+          
+          Some of the many things you can do...
+
+          - Generate Invoices and manage
+          - Stock Management
+          - Integrated shopfront
+          - Customer Relationship Management (CRM)
+          - Human Resource Management (HRM)
+          
+          Of course, you could always have seperate solutions specialised in each area for your stack. 
+
+      - job: "Data Solutions"
+        company: "Data Enablement"
+        featuredLink:
+          enable: false
+        info:
+          enable: false
+        content: |
+          If you want to have a data-led approach to making decisions, it's important to make sure you have solutions to
+          
+          - Collect your from various sources
+          - Store your data in one place
+          - Visualise your data in an easy to understand way
+
+      - job: "Managing Organic and Paid Media"
+        company: "Media Management"
+        featuredLink:
+          enable: false
+        info:
+          enable: false
+        content: |
+          Keeping connected to your audience through media channels is vital to stay top-of-mind. For any channel you want to be on, keep it easy to post content across the platforms
+
+          - Lead backend developer for a product.
+          - Created a frontend design for a product.
+
+      - job: "Custom Scripts"
+        company: "Workflow Automation"
+        featuredLink:
+          enable: false
+        info:
+          enable: false
+        content: |
+          Python is one of the most popular programming languages due to it's ease of development. If you have any tasks that you do manually, you can be sure that you'd be able to script up something in Python and run it automatically for you.
+
+      - job: "Your own Wiki"
+        company: "Business Knowledgebase"
+        featuredLink:
+          enable: false
+        info:
+          enable: false
+        content: |
+          Your business should have it's own brain. Keeping a knowledge base for your business can help you
+          
+          - Establish processes for the business
+          - Ease the onboarding process for new hires
+          - Keep a track of when and why things happen in your business
+          
+          There are plenty of solutions out there to store all your knowledge
+
+  # Education
+  education:
+    enable: false
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master of Business Administration"
+        school:
+          name: "University of California, Berkeley"
+          url: "https://example.org"
+        date: "2013 - 2015"
+        GPA: "3.8 out of 5.0"
+        content: |-
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+      - title: "Bachelor of Science in Computer Science"
+        school:
+          name: "Massachusetts Institute of Technology"
+          url: "https://example.org"
+        date: "2009 - 2013"
+        GPA: "3.9 out of 5.0"
+        content: |-
+          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+          - Face mask detection using a single convolutional neural network.
+
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        featuredLink:
+          enable: true
+          name: "My academic record"
+          url: "https://example.com"
+      - title: "High School"
+        school:
+          name: "Thomas Jefferson High School for Science and Technology."
+          url: "https://example.org"
+        GPA: "4.2 out of 5.0"
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Services"
+    items:
+      - title: Workflow Automation
+        content: Automate all those tedious tasks you do daily
+        #url: https://example.com
+#        image: /images/achievment.jpg
+      - title: Data Analytics
+        content: Bring you closer to your data and make decisions easily
+#        image: /images/achievment.jpg
+      - title: In-house Solutions
+        content: Setting up the right solutions for your needs
+        #url: "https://github.com/gurusabarish/hugo-profile"
+#        image: /images/achievment.jpg
+      - title: Website Analytics
+        content: Understand traffic to your website and unlock audiences in your media strategy
+      - title: Media and Marketing Technologies
+        content: Help you track conversions and stay connected to your customers with marketing automation
+#        url: https://example.com
+      - title: Financial Bookkeeping and Analysis
+        content: Keep your financial records up to date and integrated into your data analytics
+
+
+  # projects
+  projects:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Hugo Profile
+        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Image Converter
+        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/converter.jpg
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        badges:
+          - "Django"
+          - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: |
+      Book in a free 30min consultation below. 
+    
+      Otherwise send us an email and we'll get back to you as soon as we can.
+    email: johnnytrungle@gmail.com
+    btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com
+      twitter: https://twitter.com
+      instagram: https://instagram.com
+      facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
