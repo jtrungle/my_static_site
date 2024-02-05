@@ -1,6 +1,6 @@
 baseURL: "https://jle.one"
 languageCode: "en-us"
-title: "JLE Advisors"
+title: "JLE Business Tech Advisors"
 theme: hugo-profile
 
 outputs:
@@ -126,8 +126,8 @@ params:
     intro: "JLE Business Tech Advisors"
     title: "Technology Simplified."
     subtitle: "Start your digital transformation journey."
-    content: "We're focused on solving problems and make your technology help, not hinder."
-    image: /images/hero.svg
+    content: "We're focused on finding the right solutions to fit your business."
+    image: /images/dashboard.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -137,25 +137,25 @@ params:
       url: "/#contact"
       download: false
       newPage: false
-    socialLinks:
-      fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+#    socialLinks:
+#      fontAwesomeIcons:
+#        - icon: fab fa-github
+#          url: https://example.com
+#        - icon: fab fa-x-twitter
+#          url: https://example.com
+#      customIcons:
+#        - icon: /fav.png
+#          url: "https://example.com"
 
   # About
   about:
     enable: true
     title: "Our Philosophy"
-    image: "/images/me.png"
+    image: "/images/colab.jpg"
     content: |-
       We've come a long way with technology and it's very easy to complicate and get overwhelmed with the technologies we use.
 
-      At JLE Consulting, we're focused on keeping technology simple and helping our clients understand the tools that they use. 
+      At JLE Business Tech Advisors, we're focused on keeping technology simple and helping our clients understand the tools that they use. 
       
       Not only do we help with the setup - we aim to ensure that you understand the solutions, the options you have available now and in future, and help you be prepared for your technology journey post-engagement.
     
@@ -381,11 +381,11 @@ params:
     enable: true
     # title: "Custom Name"
     content: |
-      Book in a free 30min consultation below. 
+      Book in a free 30min consultation now. 
     
       Otherwise send us an email and we'll get back to you as soon as we can.
-    email: johnnytrungle@gmail.com
-    btnName: Mail me
+    email: jle.techadvisors@gmail.com
+    btnName: Contact Us
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -399,12 +399,12 @@ params:
       title: Recent Posts
       enable: false
       disableFeaturedImage: false
-    socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+#    socialNetworks:
+#      github: https://github.com
+#      linkedin: https://linkedin.com
+#      twitter: https://twitter.com
+#      instagram: https://instagram.com
+#      facebook: https://facebook.com
 
   # List pages like blogs and posts
   listPages:
