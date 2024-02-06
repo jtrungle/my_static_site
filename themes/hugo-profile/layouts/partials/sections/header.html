@@ -86,14 +86,6 @@
                         </li>
                     {{ end }}
 
-                    {{ if and (.Site.Params.about.enable | default false) (not (.Site.Params.navbar.menus.disableAbout | default false)) }}
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL }}#about" aria-label="about">
-                            {{ .Site.Params.about.title | default "About" }}
-                        </a>
-                    </li>
-                    {{ end }}
-
                     {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL }}#services"
@@ -102,6 +94,15 @@
                         </a>
                     </li>
                     {{ end }}
+
+                    {{ if and (.Site.Params.about.enable | default false) (not (.Site.Params.navbar.menus.disableAbout | default false)) }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.BaseURL }}#about" aria-label="about">
+                            {{ .Site.Params.about.title | default "About" }}
+                        </a>
+                    </li>
+                    {{ end }}
+
 
                     {{ if and (.Site.Params.education.enable | default false) (not (.Site.Params.navbar.menus.disableEducation | default false)) }}
                     <li class="nav-item navbar-text">

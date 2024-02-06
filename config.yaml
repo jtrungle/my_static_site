@@ -123,10 +123,10 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "JLE Business Tech Advisors"
-    title: "Technology Simplified."
-    subtitle: "Start your digital transformation journey."
-    content: "We're focused on finding the right solutions to fit your business."
+    intro: "We help build your..."
+    title: "Technology Foundation."
+#    subtitle: "Build your technology foundation"
+    content: "Form your comprehensive toolset of technologies with us today."
     image: /images/dashboard.jpg
     bottomImage:
       enable: true
@@ -155,11 +155,11 @@ params:
     content: |-
       We've come a long way with technology and it's very easy to complicate and get overwhelmed with the technologies we use.
 
-      At JLE Business Tech Advisors, we're focused on keeping technology simple and helping our clients understand the tools that they use. 
+      At JLE Business Tech Advisors, we're focused on keeping technology simple and helping you understand the tools in your business. 
       
-      Not only do we help with the setup - we aim to ensure that you understand the solutions, the options you have available now and in future, and help you be prepared for your technology journey post-engagement.
+      Implementation is only one step of the journey - we ensure to provide you with all your options to meet the needs during your growth.
     
-      Servicing Sydney's local businesses, contact us to find out how we can help.
+      We offer our services to Sydney's local businesses. Contact us today to find out how we can help.
     skills:
       enable: false
       title: "Here are a few technologies I've been working with recently:"
@@ -175,6 +175,7 @@ params:
   experience:
     enable: true
     title: "Your potential stack."
+    subtitle: "What your business could have in the toolkit."
     items:
       - job: "Tracking your website traffic"
         company: "Web Analytics"

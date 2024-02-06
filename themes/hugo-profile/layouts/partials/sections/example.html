@@ -2,8 +2,9 @@
 <section id="example" class="py-5">
     <div class="container">
         <h3 class="text-center">{{ .Site.Params.experience.title | default "Experience" }}</h3>
+        <div class="text-center">{{ .Site.Params.experience.subtitle | default "Experience" }}</div>
         <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5 w-100">
                 <div class="example-container px-3 pt-2">
                     <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
                         {{ range $index, $element := .Site.Params.experience.items }}
