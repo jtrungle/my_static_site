@@ -12,7 +12,7 @@ outputs:
     - "HTML"
     - "RSS"
 
-Paginate: 3
+Paginate: 10
 enableRobotsTXT: true
 # disqusShortname: your-disqus-shortname
 googleAnalytics: G-FF5ML6MFX9
@@ -22,13 +22,14 @@ markup:
     renderer:
       unsafe: true
 
-#Menus:
-#  main:
-#    - identifier: blog
-#      name: Blog
-#      title: Blog posts
-#      url: /blogs
-#      weight: 1
+Menus:
+  main:
+    - identifier: techcards
+      name: Tech Cards
+      title: Tech Cards
+      url: /techcards
+      weight: 1
+
 #    - identifier: gallery
 #      name: Gallery
 #      title: Blog posts
@@ -53,6 +54,7 @@ markup:
     #   weight: 2
 
 params:
+  blogSubtitle: "30 second primers to various technologies and solutions with analogies to help demystify the technology"
   title: "JLe"
   description: Data solutions for your business
   # staticPath: ""  # The path to serve the static files from
@@ -409,12 +411,12 @@ params:
 
   # List pages like blogs and posts
   listPages:
-    disableFeaturedImage: false
+    disableFeaturedImage: true
 
   # Single pages like blog and post
   singlePages:
     readTime:
-      enable: true
+      enable: false
       content: "min read"
     scrollprogress:
       enable: true
@@ -432,5 +434,12 @@ params:
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
 
-  #customScripts: -| # You can add custom scripts which will be added before </body> tag
-  #  <script type="text/javascript"><!-- any script here --></script>
+  customScripts: | # You can add custom scripts which will be added before </body> tag
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FF5ML6MFX9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-FF5ML6MFX9');
+    </script>

@@ -1,13 +1,12 @@
 ---
-title: "Rich Content"
-date: 2021-04-03T19:53:33+05:30
-draft: false
-author: "Gurusabarish"
+title: "What is Streamlit"
+date: 2024-02-06T10:53:33+05:30
+draft: true
+author: "Johnny"
 tags:
-  - Rich content
-  - Sample
-  - example
-image: /images/post.jpg
+  - Dashboards
+  - Python
+  - Automation
 description: ""
 toc: 
 ---
