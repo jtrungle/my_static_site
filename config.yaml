@@ -24,10 +24,10 @@ markup:
 
 Menus:
   main:
-    - identifier: techcards
-      name: Tech Cards
-      title: Tech Cards
-      url: /techcards
+    - identifier: FAQs
+      name: FAQs
+      title: FAQs
+      url: /faqs
       weight: 1
 
 #    - identifier: gallery
